@@ -1,4 +1,4 @@
-# Water That Sells Itself · Japanese NLP deep dive
+# Water That Sells Itself · Japanese NLP Deep Dive
 
 Python companion to the Power BI report *Water That Sells Itself* (IPSA The Time R Aqua, Japan social listening, Jul–Dec 2020).
 The dashboard answers the brief with a keyword dictionary. This notebook tests and extends it with Japanese NLP.
@@ -11,13 +11,13 @@ The dashboard answers the brief with a keyword dictionary. This notebook tests a
 | Which themes travel together? | Co-occurrence network (lift) with networkx |
 | Is the timeline real? | Platform-level daily series to separate collection windows from behaviour |
 
-## Headline results
+## Headline Results
 * Vendor sentiment overstates negativity about 4×: only 8 of 62 "negative" consumer posts criticise the product, and at least 17 posts (1.5%) are critical, not 5.6%.
 * Real complaints centre on the core promise: no visible effect, breakouts or irritation, not moisturising enough.
 * NMF (9 of 10 topics stable across random restarts) finds a *moisture power vs price* gap, and a direct count shows 7% of consumer posts name a rival brand, which the dictionary does not cover.
 * @cosme reviews arrive in three collection windows. Twitter is the honest trend line and still peaks in December (award season).
 
-## Run it
+## Run It
 ```bash
 pip install -r requirements.txt
 # put the IPSA export (.xlsx, any name containing "ipsa") in the data folder
